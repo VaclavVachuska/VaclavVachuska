@@ -1,11 +1,18 @@
-#include <cstdio>
+#include <iostream>
+#include <cstring>
+using namespace std;
 
-const char* toUpper(const char* input) {
-	// TO DO
-}
+int main()
+{
+   char s[] = "hello world";
+   int i;
 
-int main() {
-	const char* input = "Hello, World!";
-	puts(toUpper(input)); // should print HELLO, WORLD!
+   for(i=0;i<=strlen(s);i++) { 
+      if(s[i]>=97 && s[i]<=122)
+      {
+		s[i]=s[i]-32;
+      }
+   }
+   cout<<s;
+   return 0;
 }
-//zkouska
