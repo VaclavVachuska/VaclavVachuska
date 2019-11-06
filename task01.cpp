@@ -1,18 +1,15 @@
-#include <iostream>
-#include <cstring>
-using namespace std;
+#include <cstdio>
 
-int main()
-{
-   char s[] = "hello world";
-   int i;
+char* toUpper(char* input) {
+  for(int i=0; input[i] != 0; i++){
+    if(input[i] <= 'z' && input[i] >= 'a'){
+      input[i] -= 32;
+    }
+  }
+  return input;
+}
 
-   for(i=0;i<=strlen(s);i++) { 
-      if(s[i]>=97 && s[i]<=122)
-      {
-		s[i]=s[i]-32;
-      }
-   }
-   cout<<s;
-   return 0;
+int main() {
+	char input[] = "Hello, World!"; // žádné háčky ani čárky
+	puts(toUpper(input));
 }
