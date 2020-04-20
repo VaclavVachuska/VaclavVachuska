@@ -1,0 +1,1 @@
+Rozděluje se na moduly vysoké a nízké úrovně. Moduly vysoké úrovně by měli být snadno znovu použitelné a neměly by záviset na modulech nízké úrovně. Oba by měli záviset na (abstrakci?).
